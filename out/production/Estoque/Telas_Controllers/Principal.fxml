@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Telas_Controllers.PrincipalController">
+   <left>
+      <VBox prefHeight="540.0" prefWidth="160.0" spacing="20.0" style="-fx-background-color: #c6c9ce;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Button fx:id="bt_Produtos" mnemonicParsing="false" onAction="#loadProdutos" prefHeight="39.0" prefWidth="130.0" style="-fx-background-color: #6e6f72; -fx-background-radius: 30; -fx-border-color: #ffffff; -fx-border-radius: 30; -fx-border-width: 3;" text="Produtos" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="bt_Movimentacao" mnemonicParsing="false" onAction="#loadMovimentacao" prefHeight="39.0" prefWidth="123.0" style="-fx-background-color: #6e6f72; -fx-background-radius: 30;" text="Movimentação" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="bt_Relatorio" mnemonicParsing="false" onAction="#loadRelatorio" prefHeight="39.0" prefWidth="128.0" style="-fx-background-color: #6e6f72; -fx-background-radius: 30;" text="Sair" textFill="WHITE" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane fx:id="PainelPrincipal" prefHeight="540.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

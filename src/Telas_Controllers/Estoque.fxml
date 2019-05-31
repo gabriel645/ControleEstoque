@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Telas_Controllers.EstoqueController">
+   <center>
+      <Pane fx:id="PainelPrincipal" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane layoutY="1.0" prefHeight="540.0" prefWidth="785.0">
+               <center>
+                  <TableView fx:id="tabela" prefHeight="540.0" prefWidth="800.0" style="-fx-background-color: #6e6f72;" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn fx:id="ProdutoID" prefWidth="143.0" text="Nome Produto" />
+                      <TableColumn fx:id="OperacaoID" prefWidth="152.0" text="Fornecedor" />
+                        <TableColumn fx:id="Quantidade" minWidth="0.0" prefWidth="107.0" text="Quantidade" />
+                        <TableColumn prefWidth="121.0" text="Data Criação" />
+                        <TableColumn minWidth="0.0" prefWidth="101.0" text="Tipo" />
+                    </columns>
+                  </TableView>
+               </center>
+            </BorderPane>
+         </children></Pane>
+   </center>
+   <right>
+      <VBox prefHeight="400.0" prefWidth="175.0" spacing="20.0" style="-fx-background-color: #c6c9ce;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label prefHeight="21.0" prefWidth="157.0" text="Nome Produto ">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="21.0" prefWidth="152.0" text="Quantidade Entrada">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="N Quantidade" />
+            <Label prefHeight="21.0" prefWidth="177.0" text="Quantidade Saida">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="N Quantidade" />
+            <Button mnemonicParsing="false" onAction="#showTelaTransacao" prefHeight="45.0" prefWidth="147.0" style="-fx-background-color: #6e6f72; -fx-background-radius: 30;" text="Adicionar Movimento" textFill="WHITE" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

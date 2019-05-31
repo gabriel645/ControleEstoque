@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Telas_Controllers.CadastrarEditarFornecedoresController">
+   <children>
+      <TextField fx:id="textF_Nome" layoutX="24.0" layoutY="87.0" prefHeight="25.0" prefWidth="216.0" />
+      <Label layoutX="24.0" layoutY="14.0" prefHeight="22.0" prefWidth="256.0" text="Adicionar/Editar Fornecedores">
+         <font>
+            <Font name="Century Gothic Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="59.0" prefHeight="22.0" prefWidth="48.0" text="Nome">
+         <font>
+            <Font name="Century Gothic Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="130.0" prefHeight="22.0" prefWidth="73.0" text="Descrição">
+         <font>
+            <Font name="Century Gothic Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textF_Desc" layoutX="24.0" layoutY="166.0" prefHeight="25.0" prefWidth="216.0" />
+      <Button layoutX="72.0" layoutY="221.0" mnemonicParsing="false" onAction="#add_edit" prefHeight="35.0" prefWidth="121.0" style="-fx-background-radius: 30; -fx-background-color: #6e6f72;" text="Adicionar/Editar" textFill="WHITE" />
+   </children>
+</Pane>
